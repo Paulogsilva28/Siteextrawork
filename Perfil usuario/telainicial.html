@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExtraWork-interno</title>
+    <link rel="stylesheet" href="telainicial.css">
+    <link rel="shortcut icon" href="assets/images/logo-semfundo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+     <div class="topo">
+        <img class="logotop" src="assets/images/logo-semfundo.png" alt="logo">
+        <h1>ExtraWork</h1>
+     </div>
+
+
+      <div class="campo-busca">
+        <form action="/search" method="GET" class="search-form">
+          <input type="search" name="q" placeholder="Pesquisar..." class="search-input">
+          <button type="submit" class="search-button">Buscar</button>
+        </form>
+      </div >
+     
+      <main class="principal">
+        <ul class="icones">
+          <li><img onclick="abrirtab(event)" data-tab-id="vagas" class="vagas" src="assets/images/trabalho.png" alt="vagas" /></li>
+          <li><img onclick="abrirtab(event)" data-tab-id="contatar" class="contratar" src="assets/images/cv.png" alt="" /></li>
+          <li><img onclick="abrirtab(event)" data-tab-id="profissionais" class="profissionais" src="assets/images/empregado.png" alt=""/></li>
+        </ul>
+       
+        <div class="itens">
+          <h1 onclick="abrirtab(event)" class="txt-1" data-tab-id="profissionais">Profissionais</h1>
+          <h1 class="txt-2" data-tab-id="contratar">Contratar</h1>
+          <h1 onclick="abrirtab(event)" class="txt-3" data-tab-id="vagas">Vagas</h1>
+        </div>
+             
+             <div class="circle-1" content-id = "profissionais"></div>
+       
+             <div class="circle-2" content-id = "Contratar"></div>
+             <div class="circle-3" content-id = "Vagas"></div>
+      </main>
+
+
+     <div class="menu">
+       <img class="user" src="assets/images/perfil.png" alt="">
+       <img class="sair" src="assets/images/sair.png" alt="">
+     </div>
+   
+     <div class="button">
+      <h1 class="perfil">Perfil</h1>
+      <br>
+      <br>
+      <h1>Sair</h1>
+     </div>
+    </header>
+
+
+<nav class="menu-lateral">
+ <div class="btn-expandir">
+  <i class="bi bi-list" id="btn-exp"></i>
+
+
+ 
+ </div>
+ <ul>
+   <li class="item-menu ativo">
+    <a href="##">
+      <span class="icon"> <i class="bi bi-house-door"></i></span>
+      <span class="txt-link"> Home</span>
+    </a>
+   </li>
+   <li class="item-menu">
+    <a href="##">
+      <span class="icon"> <i class="bi bi-columns-gap"></i> </span>
+      <span class="txt-link"> Dashboard</span>
+    </a>
+   </li>
+   <li class="item-menu">
+    <a href="agenda.html">
+      <span class="icon"> <i class="bi bi-journals"></i></span>
+      <span class="txt-link"> Agenda</span>
+    </a>
+   </li>
+   <li class="item-menu">
+    <a href="##">
+      <span class="icon"> <i class="bi bi-gear"></i></span>
+      <span class="txt-link"> Configurações</span>
+    </a>
+   </li>
+   <li class="item-menu">
+    <a href="##">
+      <span class="icon"> <i class="bi bi-person-circle"></i></span>
+      <span class="txt-link"> Conta</span>
+    </a>
+   </li>
+ </ul>
+</nav>
+
+
+<div class="tabs">
+ 
+  <div class="tab-content">
+    <div id="profissionais" class="tab-pane">
+      <!-- conteúdo da aba de profissionais -->
+   
+      <div class="info-container">
+       <div class="foto">
+         <img src="assets/images/avatar_masculino_3d-removebg-preview.png" alt="Foto do profissional">
+       </div>
+       <div class="info">
+         <h2>Pedro Alencar</h2>
+         <h3>Designer</h3>
+         <h6> 4,9 / 5</h6>
+         <img src="componentes/imagens 1/icons8-star-48.png" alt="">
+         <ul>
+           <li><strong>Sobre o profissional:</strong> <br> Sou um designer comprometido em transformar suas ideias em realidades visuais impactantes. Com criatividade e habilidade técnica, crio soluções únicas e funcionais para design gráfico, produtos, moda e interiores. Vamos trazer sua visão à vida juntos!</li>
+           <li><strong>Experiência:</strong> 5 anos</li>
+           <li><strong>Habilidade:</strong> Photoshop, Illustrator, etc.</li>
+         </ul>
+         <button class="chat-btn">Contato</button>
+       </div>
+         </div>
+     
+         <div class="info-container2">
+       <div class="foto2">
+         <img src="assets/images/avatar_feminino_3d-removebg-preview.png" alt="Foto do profissional">
+       </div>
+       <div class="info2">
+         <h2>Maria Santos</h2>
+         <h3>Arquiteta</h3>
+         <h6> 4,5 / 5</h6>
+         <img src="componentes/imagens 1/icons8-star-48.png" alt="">
+         <ul>
+           <li><strong>Sobre o profissional:</strong> <br> Sou uma arquiteta apaixonada por criar espaços funcionais e esteticamente agradáveis. Combinando criatividade e precisão técnica, desenvolvo projetos únicos que refletem as necessidades e sonhos dos clientes. Vamos transformar seu ambiente juntos!</li>
+           <li><strong>Experiência:</strong> 2 anos</li>
+           <li><strong>Habilidade:</strong> Excel, Illustrator 3D, etc.</li>
+         </ul>
+         <button class="chat-btn2">Contato</button>
+       </div>
+         </div>
+   
+   
+    </div>
+    <div id="vagas" class="tab-pane">
+      <!-- conteúdo da aba de vagas -->
+       
+       
+    </div>
+    <div id="contratar" class="tab-pane">
+      <!-- conteúdo da aba de contratar -->
+     
+       
+    </div>
+  </div>
+</div>
+
+
+<script src="menu.js"></script>
+<script src="pag.interna.js"></script>
+   
+</body>
+</html>
+
+

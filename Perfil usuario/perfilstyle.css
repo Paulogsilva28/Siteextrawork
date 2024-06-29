@@ -1,0 +1,232 @@
+body {
+    font-family: Arial, sans-serif; /* Define a fonte */
+    background-image: linear-gradient(1200deg, #840ec9, #46177b); /* Define um gradiente de fundo */
+    display: flex; /* Utiliza flexbox para o layout */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    height: 60%; /* Define a altura para ocupar a tela inteira */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+}
+input[type="text"] {
+    width: auto;
+
+    height: 40px;
+   
+}
+
+
+
+
+/* Container principal do perfil */
+.profile-container {
+    width: 100%; /* Ocupa 100% da largura disponível */
+    max-width: 45%; /* Define uma largura máxima */
+    margin: center; /* Centraliza horizontalmente */
+       align-items: center; /* Centraliza verticalmente */
+    padding:4%; /* Adiciona padding interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adiciona sombra */
+    background-color: #ffffff; /* Define a cor de fundo branca */
+    border-radius: 10%; /* Arredonda os cantos */
+}
+
+/* Cabeçalho do perfil */
+.profile-header {
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Adiciona padding interno */
+    border-bottom: 1px solid #ccc; /* Adiciona uma linha de separação */
+}
+
+
+/* Colunas esquerda e direita */
+.left-column, .right-column {
+    flex:1; /* Cada coluna ocupa o mesmo espaço disponível */
+    min-width: 300px; /* Define uma largura mínima */
+    margin: 30px; /* Adiciona margem ao redor */
+}
+
+/* Estilo dos campos de informação */
+.field, .fieldInf, .fieldConfiguri {
+    background: #f9f9f9; /* Cor de fundo clara */
+    padding: 20px; /* Adiciona padding interno */
+    border-radius: 10px; /* Arredonda os cantos */
+    margin-bottom: 20px; /* Adiciona margem inferior */
+    position: relative; /* Permite posicionar elementos internamente */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25); /* Adiciona sombra */
+}
+
+/* Botão de configuração */
+.settings-btn {
+    position: absolute; /* Posiciona de forma absoluta */
+    top: 10px; /* Distância do topo */
+    right: 10px; /* Distância da direita */
+    background-color: #007BFF; /* Cor de fundo azul */
+    color: white; /* Cor do texto branca */
+    border: none; /* Remove a borda */
+    padding: 5px 10px; /* Adiciona padding interno */
+    border-radius: 5px; /* Arredonda os cantos */
+    cursor: pointer; /* Cursor de mão ao passar */
+    transition: background-color 0.3s; /* Transição suave de cor de fundo */
+}
+
+/* Estilo ao passar o mouse sobre o botão de configuração */
+.settings-btn:hover {
+    background-color:red /* Cor de fundo azul mais escura */
+}
+
+
+
+/* Margem superior para a biografia do usuário */
+.user-bio {
+    margin-top:50px; /* Adiciona margem superior */
+}
+
+/* Remove o estilo padrão da lista */
+ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding */
+}
+
+/* Estilo para o container de upload de imagem */
+.upload {
+
+    position: relative; /* Posiciona de forma relativa */
+    text-align:center ; /* Centraliza o conteúdo */
+    margin: auto; /* Adiciona margem superior */
+}
+
+/* Estilo da imagem de upload */
+.upload img {
+    border-radius: 50%; /* Deixa a imagem redonda */
+    width: 180px; /* Define a largura */
+    height: 180px; /* Define a altura */
+    border: 5px solid #840ec9; /* Adiciona uma borda */
+}
+
+/* Estilo para os botões de upload */
+.upload .rightRound, .upload .leftRound {
+    position: absolute; /* Posiciona de forma absoluta */
+    bottom: 0; /* Distância da base */
+    width: 32px; /* Define a largura */
+    height: 32px; /* Define a altura */
+    line-height: 32px; /* Alinha o texto verticalmente */
+    text-align: center; /* Centraliza o texto */
+    border-radius: 50%; /* Deixa os botões redondos */
+    overflow: hidden; /* Oculta o conteúdo excedente */
+    cursor: pointer; /* Cursor de mão ao passar */
+}
+
+/* Botão de upload à direita */
+.upload .rightRound {
+    right: 40%; /* Distância da direita */
+    background: #00B4FF; /* Cor de fundo azul claro */
+}
+
+/* Botão de upload à esquerda */
+.upload .leftRound {
+    left: 40%; /* Distância da esquerda */
+    background: red; /* Cor de fundo vermelha */
+}
+
+/* Cor do ícone dos botões de upload */
+.upload .fa {
+    color: white; /* Define a cor do ícone */
+}
+
+/* Estilo para o input de upload */
+.upload input {
+    position:absolute ; /* Posiciona de forma absoluta */
+    transform: scale(2); /* Aumenta o tamanho do input */
+    opacity: 0; /* Deixa o input invisível */
+}
+
+/* Cursor do mouse ao passar sobre o input de upload */
+.upload input::-webkit-file-upload-button, .upload input[type=submit] {
+    cursor: pointer; /* Cursor de mão ao passar */
+}
+
+/* Estilo dos botões de edição e salvamento */
+.edit-button, .save-button {
+    padding: 20px;
+    background-color: #007bff; /* Cor de fundo azul */
+    color: white; /* Cor do texto branca */
+    border: none; /* Remove a borda */
+    padding: 10px 10px; /* Adiciona padding interno */
+    border-radius: 5px; /* Arredonda os cantos */
+    cursor: pointer; /* Cursor de mão ao passar */
+    transition: background-color 0.3s; /* Transição suave de cor de fundo */
+}
+
+/* Estilo ao passar o mouse sobre os botões de edição e salvamento */
+.edit-button:hover, .save-button:hover {
+    background-color: #0056b3; /* Cor de fundo azul mais escura */
+}
+
+/* Botão de salvamento inicialmente oculto */
+.save-button {
+    display: none; /* Oculta o botão "Salvar" */
+}
+
+
+
+
+
+.content {
+    margin-top: 20px;
+}
+#editable-list {
+    list-style-type: none;
+    padding: 0;
+}
+#editable-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#editable-list strong {
+    width: 150px;
+}
+#editable-list input {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+#editable-list button {
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.content, .right-column .field {
+    margin-top: 20px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+ul strong {
+    width: 150px;
+}
+ul input {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+ul button {
+    margin-left: 5px;
+}
+.save-button {
+    display: none;
+}
